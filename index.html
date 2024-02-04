@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="icons8-calcular-32.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: grey;
+            color: aliceblue;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h4{
+            text-align: center;
+        }
+
+        #calculadora{
+            text-align: center;
+            padding-top: 5vh;
+        }
+
+        input, button{
+            border-radius: 5px;
+        }
+
+        input{
+            background-color: rgba(0, 0, 0, 0.363);
+            color: aliceblue;
+            padding-right: 5%;
+        }
+
+        button{
+            background-color: rgba(0, 0, 0, 0.363);
+            color: aliceblue;
+        }
+        button:hover{
+            box-shadow: 2px 2px white;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Calculadora básica
+    </h1>
+    <h4>
+        En el campo "operación" debes elegir de las siguientes palabras: sumar, restar, multiplicar, dividir.
+    </h4>
+    <form id="calculadora">
+        <label for="num1">
+            Número 1: 
+        </label>
+        <input type="number" name="num1" id="num1"><br><br>
+
+        <label for="operacion">
+            Operación: 
+        </label>
+        <input type="text" name="operacion" id="operacion"><br><br>
+
+        <label for="num2">
+            Número 2: 
+        </label>
+        <input type="number" name="num2" id="num2"><br><br>
+
+        <button type="button" onclick="calcular()">
+            Calcular
+        </button><br><br>
+
+        <label for="resul">
+            Resultado: 
+        </label>
+        <input type="text" name="resul" id="resul">
+
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
